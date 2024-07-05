@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable TODo List</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="header">
+            <span class="title">Add Todo</span>
+            <span class="Xmodal">&times;</span>
+        </div>
+        <div class="form">
+            <input type="text" class="input" required>
+            <button class="btn" type="button">Add Todo</button>
+        </div>
+    </div>
+    <div class="todo">
+        <div class="status">
+            <div class="toDoHeather" >No Status</div>
+            <div class="toDoContainer">
+                <div class="AddBtn">+Add Todo</div>
+                <div class="item" draggable="true">
+                    <span class="text">50 pushups</span>
+                    <span class="Xitem">&times;</span>
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <div class="toDoHeather">Not Started</div>
+            <div class="toDoContainer" ></div>
+        </div>
+        <div class="status">
+            <div class="toDoHeather">In Progress</div>
+            <div class="toDoContainer"></div>
+        </div>
+        <div class="status">
+            <div class="toDoHeather"> Completed</div>
+            <div class="toDoContainer"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

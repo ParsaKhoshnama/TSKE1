@@ -1,0 +1,38 @@
+*,*::before,*::after{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    cursor: pointer;
+    gap: 3px;
+}
+
+
+.star{
+    width: 40px;
+    height: auto;
+    
+}
+
+.star .star-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    fill:transparent;
+    stroke: #ED8A19;
+    transition: all 400ms ease;
+}
+
+
+.star .star-icon.hover{
+    fill:#ED8A19;
+}
+
+.star .star-icon.active{
+
+}
